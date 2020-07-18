@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Shopkeeper_UserInterface</string>
+    <string-array name="status">
+        <item>Status</item>
+        <item>In Progress</item>
+        <item>Active</item>
+        <item>Completed</item>
+        <item>Pending</item>
+    </string-array>
+    <string-array name="unit">
+        <item>Unit</item>
+        <item>gram</item>
+        <item>kg</item>
+        <item>packs</item>
+
+    </string-array>
+</resources>

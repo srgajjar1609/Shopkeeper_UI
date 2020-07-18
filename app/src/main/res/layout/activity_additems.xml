@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".additems"
+    android:background="@drawable/image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Items"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+        <AutoCompleteTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:focusable="true"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:maxLength="50"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:hint="Item Name"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginRight="25dp">
+        </AutoCompleteTextView>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:focusable="true"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:maxLength="50"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:hint="Unit"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginRight="25dp">
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:hint="Price"
+                android:inputType="text"
+
+                android:maxLength="50"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"></EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                android:focusable="true"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+
+                android:textSize="30dp"
+
+
+                android:layout_marginTop="30dp"
+                android:text="/"
+                android:textColorHint="#FFFFFF"
+                >
+            </TextView>
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/sppaymentmethod"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/unit"
+                android:layout_marginTop="30dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="ADD"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/background_image"
+            android:layout_marginTop="15dp">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

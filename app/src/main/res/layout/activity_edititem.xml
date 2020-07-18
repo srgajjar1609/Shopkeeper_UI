@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edititem"
+    android:background="@drawable/image">
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Mode"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <CheckBox
+        android:id="@+id/cbhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:checked="true"
+       />
+
+    <CheckBox
+        android:id="@+id/cbtakeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:text="Take Out"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:checked="true"
+       />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery type"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <CheckBox
+          android:id="@+id/cbonle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:text="Online"
+          android:textColor="#FFFFFF"
+          android:textSize="15dp"
+          android:checked="true"
+          />
+
+      <CheckBox
+          android:id="@+id/cbcod"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:text="Cash on Delivary"
+          android:textColor="#FFFFFF"
+          android:textSize="15dp"
+          android:checked="true"
+          />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <CheckBox
+          android:id="@+id/cbcat1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:text="Grocery"
+          android:textColor="#FFFFFF"
+          android:textSize="15dp"
+          android:checked="true"
+          />
+
+      <CheckBox
+          android:id="@+id/cbcat2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:text="Dairy"
+          android:textColor="#FFFFFF"
+          android:textSize="15dp"
+          android:checked="true"
+          />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <CheckBox
+          android:id="@+id/cbcat3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:text="Snaks"
+          android:textColor="#FFFFFF"
+          android:textSize="15dp"
+
+
+          />
+
+      <CheckBox
+          android:id="@+id/cbcat4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginTop="10dp"
+          android:text="Chocolates"
+          android:textColor="#FFFFFF"
+          android:textSize="15dp"
+          android:checked="true"
+          />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timings"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+      <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:layout_marginTop="10dp">
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Monday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Tuesday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Wednesday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Thursday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Friday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editTex10"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Saturday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText11"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText12"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+        <TableRow  android:padding="1dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Sunday"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText13"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="to"
+              android:textSize="15dp"
+              android:textColor="#FFFFFF"/>
+          <EditText
+              android:id="@+id/editText14"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFF"
+              android:layout_weight="1"
+              android:textColorHint="#FFFFFF"
+              android:hint="Enter Time"
+              />
+        </TableRow>
+
+      </TableLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Edit"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/background_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp">
+
+    </Button>
+  </LinearLayout>
+  </ScrollView>
+  </RelativeLayout>
